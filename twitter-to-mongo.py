@@ -7,9 +7,10 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 import datetime
-
+import connection.py
 # The MongoDB connection info. This assumes your database name is TwitterStream, and your collection name is tweets.
-connection = MongoClient("mongodb://porchiaTest01_02:MongoDB2018!!!@porchiatest01-shard-00-00-t10gy.gcp.mongodb.net:27017,porchiatest01-shard-00-01-t10gy.gcp.mongodb.net:27017,porchiatest01-shard-00-02-t10gy.gcp.mongodb.net:27017/TwitterStream?ssl=true&replicaSet=PorchiaTest01-shard-0&authSource=admin")
+# connection = MongoClient("mongodb://yourconnectioninfo")
+
 db = connection.TwitterStream
 db.tweets.ensure_index("id", unique=True, dropDups=True)
 collection = db.tweets
