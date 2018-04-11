@@ -21,11 +21,6 @@ keywords = ['#cyber','#mongodb','#news']
 # Optional - Only grab tweets of specific language
 language = ['en']
 
-# You need to replace these with your own values that you get after creating an app on Twitter's developer portal.
-consumer_key = "08CGm89RU4Lp7Ms1vVoiUa8K6"
-consumer_secret = "Won9AmEQ46LaUBfw96rxw813xFME4IWQapDtbM8XUHQjhUjOME"
-access_token = "363593761-r9UDUcGKrpQDkMV5WStlToqQpFhU2Q75aQW32pR0"
-access_token_secret = "x7RVrmaHrfQYxXlniuwbQN4o5A8J1Oq3hE7utEoNdah7S"
 
 # The below code will get Tweets from the stream and store only the important fields to your database
 class StdOutListener(StreamListener):
