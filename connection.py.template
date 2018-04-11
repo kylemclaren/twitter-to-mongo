@@ -1,0 +1,9 @@
+# The MongoDB connection info. This assumes your database name is TwitterStream, and your collection name is tweets.
+connection = MongoClient("mongodb://yourinfo")
+
+# Twitter connection keys
+# You need to replace these with your own values that you get after creating an app on Twitter's developer portal.
+consumer_key = "yourkey"
+consumer_secret = "yourkey"
+access_token = "yourkey"
+access_token_secret = "yourkey"
